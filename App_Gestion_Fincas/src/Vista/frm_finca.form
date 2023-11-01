@@ -52,7 +52,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="af" green="d6" red="e9" type="rgb"/>
+          <Color blue="fe" green="fe" red="fd" type="rgb"/>
         </Property>
       </Properties>
 
@@ -62,29 +62,72 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="49" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  <EmptySpace pref="655" max="32767" attributes="0"/>
+              </Group>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="232" max="32767" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="38" max="32767" attributes="0"/>
-              </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel3" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="43" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="fe" green="fe" red="fd" type="rgb"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel2" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="af" green="d6" red="e9" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagenes/granja (1).png"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tw Cen MT" size="48" style="1"/>
@@ -92,27 +135,12 @@
             <Property name="text" type="java.lang.String" value="Sistema de Gesti&#xf3;n de Fincas"/>
           </Properties>
         </Component>
-        <Container class="javax.swing.JPanel" name="jPanel3">
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="123" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-        </Container>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="af" green="d6" red="e9" type="rgb"/>
+          <Color blue="fe" green="fe" red="fd" type="rgb"/>
         </Property>
       </Properties>
 
@@ -126,7 +154,7 @@
                   <Component id="jPanel5" max="32767" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -148,7 +176,7 @@
         <Container class="javax.swing.JPanel" name="jPanel4">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="dd" green="ff" red="ff" type="rgb"/>
+              <Color blue="fb" green="f5" red="eb" type="rgb"/>
             </Property>
           </Properties>
 
@@ -157,20 +185,51 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                      <Component id="btn_limpiarcultivos" pref="40" max="32767" attributes="0"/>
+                      <Component id="btn_limpiarcamposcultivos" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="fnt_agregarfinca5" pref="40" max="32767" attributes="0"/>
+                      <Component id="btn_asociarcultivo" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txt_codigocultivo" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <Component id="txt_codigotrabajador_cultivo" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <Component id="txt_produccioncultivo" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <Component id="txt_descripcioncultivo" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <Component id="txt_nombrecultivo" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txt_codigocultivo" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_nombrecultivo" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_descripcioncultivo" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_produccioncultivo" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                      <Component id="txt_codigotrabajador_cultivo" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="fnt_agregarfinca5" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="btn_limpiarcultivos" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btn_asociarcultivo" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btn_limpiarcamposcultivos" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -178,10 +237,10 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="btn_limpiarcultivos">
+            <Component class="javax.swing.JButton" name="btn_limpiarcamposcultivos">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -190,20 +249,20 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/limpiar.png"/>
+                  <Image iconType="3" name="/Imagenes/limpio.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_limpiarcultivosActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_limpiarcamposcultivosActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="fnt_agregarfinca5">
+            <Component class="javax.swing.JButton" name="btn_asociarcultivo">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -212,14 +271,122 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/limpiar.png"/>
+                  <Image iconType="3" name="/Imagenes/enlazar (1).png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fnt_agregarfinca5ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_asociarcultivoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cultivos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_produccioncultivo">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Producci&#xf3;n (kg)">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_produccioncultivoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_nombrecultivo">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Nombre del Cultivo">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nombrecultivoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_descripcioncultivo">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Descripci&#xf3;n">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_descripcioncultivoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_codigotrabajador_cultivo">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="C&#xf3;digo Trabajador">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_codigotrabajador_cultivoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_codigocultivo">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="C&#xf3;digo">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_codigocultivoActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -227,7 +394,7 @@
         <Container class="javax.swing.JPanel" name="jPanel5">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="dd" green="ff" red="ff" type="rgb"/>
+              <Color blue="fb" green="f5" red="eb" type="rgb"/>
             </Property>
           </Properties>
 
@@ -235,34 +402,59 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="btn_limpiartabajador" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="btn_agregartrabajador" pref="57" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btn_consultartrabajador" pref="58" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btn_actualizartrabajador" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                              <Component id="btn_limpiarcampostrabajadores" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="fnt_agregarfinca9" max="32767" attributes="0"/>
-                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                              <Component id="fnt_agregarfinca8" max="32767" attributes="0"/>
-                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="fnt_agregarfinca7" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txt_codigotrabajador" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                          <Component id="txt_cargotrabajador" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                          <Component id="txt_nitfinca_trabajador" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                          <Component id="txt_contactotrabajador" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                          <Component id="txt_nombretrabajador" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btn_limpiartabajador" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txt_codigotrabajador" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_nombretrabajador" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_contactotrabajador" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_nitfinca_trabajador" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="fnt_agregarfinca8" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="fnt_agregarfinca9" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="fnt_agregarfinca7" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="txt_cargotrabajador" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="btn_limpiarcampostrabajadores" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btn_consultartrabajador" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btn_agregartrabajador" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btn_actualizartrabajador" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -270,10 +462,10 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="btn_limpiartabajador">
+            <Component class="javax.swing.JButton" name="btn_limpiarcampostrabajadores">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -282,20 +474,20 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/limpiar.png"/>
+                  <Image iconType="3" name="/Imagenes/pagina-web.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_limpiartabajadorActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_limpiarcampostrabajadoresActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="fnt_agregarfinca7">
+            <Component class="javax.swing.JButton" name="btn_actualizartrabajador">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -304,20 +496,20 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/limpiar.png"/>
+                  <Image iconType="3" name="/Imagenes/procesamiento-de-datos.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fnt_agregarfinca7ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_actualizartrabajadorActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="fnt_agregarfinca8">
+            <Component class="javax.swing.JButton" name="btn_consultartrabajador">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -326,20 +518,20 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/consulta-de-datos.png"/>
+                  <Image iconType="3" name="/Imagenes/aumentador.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fnt_agregarfinca8ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_consultartrabajadorActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="fnt_agregarfinca9">
+            <Component class="javax.swing.JButton" name="btn_agregartrabajador">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -348,14 +540,122 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/granja.png"/>
+                  <Image iconType="3" name="/Imagenes/seguidores.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fnt_agregarfinca9ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_agregartrabajadorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Trabajadores"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_codigotrabajador">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="C&#xf3;digo">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_codigotrabajadorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_contactotrabajador">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Contacto">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_contactotrabajadorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_nombretrabajador">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Nombre">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nombretrabajadorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_nitfinca_trabajador">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Nit Finca">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nitfinca_trabajadorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_cargotrabajador">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Cargo">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_cargotrabajadorActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -363,26 +663,45 @@
         <Container class="javax.swing.JPanel" name="jPanel6">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="dd" green="ff" red="ff" type="rgb"/>
+              <Color blue="fb" green="f5" red="eb" type="rgb"/>
             </Property>
           </Properties>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="fnt_agregarfinca" pref="47" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="fnt_agregarfinca1" pref="47" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="fnt_agregarfinca6" pref="48" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="btn_limpiarfinca" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="txt_nitfinca" min="-2" pref="238" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="btn_agregarfinca" pref="47" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btn_consultarfinca" pref="47" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btn_actualizarfinca" pref="48" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btn_limpiarcamposfinca" pref="40" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txt_correofinca" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <Component id="txt_propietariofinca" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <Component id="txt_ubicacionfinca" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <Component id="txt_nombrefinca" min="-2" pref="238" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -390,12 +709,23 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btn_limpiarfinca" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace pref="241" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="fnt_agregarfinca1" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="fnt_agregarfinca" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="fnt_agregarfinca6" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txt_nitfinca" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_nombrefinca" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_ubicacionfinca" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txt_propietariofinca" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                      <Component id="txt_correofinca" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="btn_limpiarcamposfinca" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btn_consultarfinca" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btn_agregarfinca" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btn_actualizarfinca" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -403,10 +733,10 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="fnt_agregarfinca">
+            <Component class="javax.swing.JButton" name="btn_agregarfinca">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -415,20 +745,20 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/granja.png"/>
+                  <Image iconType="3" name="/Imagenes/agregar-archivo.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fnt_agregarfincaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_agregarfincaActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="fnt_agregarfinca1">
+            <Component class="javax.swing.JButton" name="btn_consultarfinca">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -437,20 +767,20 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/consulta-de-datos.png"/>
+                  <Image iconType="3" name="/Imagenes/consulta.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fnt_agregarfinca1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_consultarfincaActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="btn_limpiarfinca">
+            <Component class="javax.swing.JButton" name="btn_actualizarfinca">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -459,20 +789,20 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/limpiar.png"/>
+                  <Image iconType="3" name="/Imagenes/actualizar-datos.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_limpiarfincaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_actualizarfincaActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="fnt_agregarfinca6">
+            <Component class="javax.swing.JButton" name="btn_limpiarcamposfinca">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="ff" red="ff" type="rgb"/>
+                  <Color blue="fb" green="f5" red="eb" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tw Cen MT" size="14" style="1"/>
@@ -481,14 +811,122 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/limpiar.png"/>
+                  <Image iconType="3" name="/Imagenes/computadora.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fnt_agregarfinca6ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_limpiarcamposfincaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Fincas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_nitfinca">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Nit ">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nitfincaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_nombrefinca">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Nombre de la Finca">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nombrefincaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_ubicacionfinca">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Ubicaci&#xf3;n">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_ubicacionfincaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_propietariofinca">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Propietario">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_propietariofincaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_correofinca">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="14" style="0"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder justification="3" title="Correo">
+                      <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="default"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_correofincaActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

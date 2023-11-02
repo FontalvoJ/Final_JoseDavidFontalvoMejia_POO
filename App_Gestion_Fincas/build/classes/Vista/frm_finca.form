@@ -301,9 +301,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_produccioncultivoActionPerformed"/>
@@ -320,9 +317,6 @@
                       <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
                     </TitledBorder>
                   </Border>
-                </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
                 </Property>
               </Properties>
               <Events>
@@ -341,9 +335,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_descripcioncultivoActionPerformed"/>
@@ -361,9 +352,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_codigotrabajador_cultivoActionPerformed"/>
@@ -380,9 +368,6 @@
                       <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
                     </TitledBorder>
                   </Border>
-                </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
                 </Property>
               </Properties>
               <Events>
@@ -570,9 +555,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_codigotrabajadorActionPerformed"/>
@@ -589,9 +571,6 @@
                       <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
                     </TitledBorder>
                   </Border>
-                </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
                 </Property>
               </Properties>
               <Events>
@@ -610,9 +589,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nombretrabajadorActionPerformed"/>
@@ -630,9 +606,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nitfinca_trabajadorActionPerformed"/>
@@ -649,9 +622,6 @@
                       <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
                     </TitledBorder>
                   </Border>
-                </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
                 </Property>
               </Properties>
               <Events>
@@ -841,9 +811,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nitfincaActionPerformed"/>
@@ -860,9 +827,6 @@
                       <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
                     </TitledBorder>
                   </Border>
-                </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
                 </Property>
               </Properties>
               <Events>
@@ -881,9 +845,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_ubicacionfincaActionPerformed"/>
@@ -901,9 +862,6 @@
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_propietariofincaActionPerformed"/>
@@ -920,9 +878,6 @@
                       <Font PropertyName="font" name="Tw Cen MT" size="12" style="0"/>
                     </TitledBorder>
                   </Border>
-                </Property>
-                <Property name="caret" type="javax.swing.text.Caret" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
                 </Property>
               </Properties>
               <Events>

@@ -1,29 +1,28 @@
-
 package Vista;
-import Controlador.cls_finca; 
-import Controlador.cls_trabajadores; 
-import Controlador.cls_cultivos; 
-import java.util.LinkedList; 
+
+import Controlador.cls_finca;
+import Controlador.cls_trabajadores;
+import Controlador.cls_cultivos;
+import java.util.LinkedList;
 import javax.swing.JOptionPane;
 
 public class frm_finca extends javax.swing.JFrame {
- LinkedList<cls_finca> Finca = new LinkedList<>();
- LinkedList<cls_trabajadores> Trabajador = new LinkedList<>();
- LinkedList<cls_cultivos> Cultivos = new LinkedList<>();
+
+    LinkedList<cls_finca> Finca = new LinkedList<>();
+    LinkedList<cls_trabajadores> Trabajador = new LinkedList<>();
+    LinkedList<cls_cultivos> Cultivos = new LinkedList<>();
 
     boolean bln_sw_finca;
     boolean bln_sw_trabajador;
     int int_pfinca;
     int int_ptrabajador;
-   
-    
+
     public frm_finca() {
         initComponents();
         btn_actualizarfinca.setEnabled(false);
         btn_actualizartrabajador.setEnabled(false);
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -569,113 +568,163 @@ public class frm_finca extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-   
-    
-    private void btn_agregarfincaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregarfincaActionPerformed
-        // Verificar si todos los campos están llenos
-    if (txt_nitfinca.getText().isEmpty() || txt_nombrefinca.getText().isEmpty() || txt_ubicacionfinca.getText().isEmpty() || txt_propietariofinca.getText().isEmpty() || txt_correofinca.getText().isEmpty()) {
-        // Mostrar un mensaje de que todos los datos deben ser llenados
-        JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos.", "Campos Incompletos", JOptionPane.WARNING_MESSAGE);
-    } else {
-        // Verificar si el campo txt_nitfinca solo contiene números
-        if (!txt_nitfinca.getText().matches("\\d+")) {
-            JOptionPane.showMessageDialog(null, "El campo NIT de la finca debe contener solo números.", "Entrada Inválida", JOptionPane.ERROR_MESSAGE);
-        } else {
-            // Agregar la finca solo si todos los campos están llenos y el campo txt_nitfinca contiene solo números
-            Finca.add(new cls_finca(txt_nitfinca.getText(), txt_nombrefinca.getText(), txt_ubicacionfinca.getText(), txt_propietariofinca.getText(), txt_correofinca.getText()));
-            JOptionPane.showMessageDialog(null, "¡Registro de finca completado satisfactoriamente!", "Éxito en el Registro", JOptionPane.INFORMATION_MESSAGE);
+
+    private boolean isNumeric(String str) {
+        if (str == null) {
+            return false;
+        }
+        try {
+            Double.parseDouble(str); // Intenta convertir la cadena a un número
+            return true;
+        } catch (NumberFormatException e) {
+            return false; // No se puede convertir a número
         }
     }
+    private void btn_agregarfincaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregarfincaActionPerformed
+
+        if (txt_nitfinca.getText().isEmpty()
+                || txt_nombrefinca.getText().isEmpty()
+                || txt_ubicacionfinca.getText().isEmpty()
+                || txt_propietariofinca.getText().isEmpty()
+                || txt_correofinca.getText().isEmpty()) {
+            // Mostrar un mensaje de que todos los datos deben ser llenados
+            JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos.", "Campos Incompletos", JOptionPane.WARNING_MESSAGE);
+        } else {
+            // Verificar si el campo txt_nitfinca solo contiene números
+            if (!isNumeric(txt_nitfinca.getText())) {
+                JOptionPane.showMessageDialog(null, "El campo NIT de la finca debe contener solo números.", "Entrada Inválida", JOptionPane.ERROR_MESSAGE);
+            } else {
+                // Agregar la finca solo si todos los campos están llenos y el campo txt_nitfinca contiene solo números
+                Finca.add(new cls_finca(txt_nitfinca.getText(), txt_nombrefinca.getText(), txt_ubicacionfinca.getText(), txt_propietariofinca.getText(), txt_correofinca.getText()));
+                JOptionPane.showMessageDialog(null, "¡Registro de finca completado satisfactoriamente!", "Éxito en el Registro", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
     }//GEN-LAST:event_btn_agregarfincaActionPerformed
 
     private void btn_consultarfincaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_consultarfincaActionPerformed
-                                                  
+
         bln_sw_finca = false;
         int_pfinca = 0;
-        
-        for (int i = 0; i < Finca.size(); i++){
-            if(txt_nitfinca.getText().equals(Finca.get(i).getStr_nit())){
-            bln_sw_finca = true;
-            int_pfinca = i;
-            break;
-            }
-        }
-        
-        if (bln_sw_finca == false){
-        JOptionPane.showMessageDialog(null, "No se encontraron registros de fincas que coincidan con la búsqueda. Por favor, intente nuevamente.", "Sin Resultados", JOptionPane.WARNING_MESSAGE);
-        }else{
-            txt_nombrefinca.setText(Finca.get(int_pfinca).getStr_nombre());
-            txt_ubicacionfinca.setText(Finca.get(int_pfinca).getStr_ubicacion());
-            txt_propietariofinca.setText(Finca.get(int_pfinca).getStr_propietario());
-            txt_correofinca.setText(Finca.get(int_pfinca).getStr_correo());
-            btn_actualizarfinca.setEnabled(true); 
-        }
-    
-    }//GEN-LAST:event_btn_consultarfincaActionPerformed
 
-    private void btn_limpiarcampostrabajadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarcampostrabajadoresActionPerformed
-    txt_codigotrabajador.setText("");
-    txt_nombretrabajador.setText("");
-    txt_contactotrabajador.setText("");
-    txt_nitfinca_trabajador.setText("");
-    txt_cargotrabajador.setText("");
-    }//GEN-LAST:event_btn_limpiarcampostrabajadoresActionPerformed
-
-    private void btn_limpiarcamposcultivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarcamposcultivosActionPerformed
-    txt_codigocultivo.setText("");
-    txt_nombrecultivo.setText("");
-    txt_descripcioncultivo.setText("");
-    txt_produccioncultivo.setText("");
-    txt_codigotrabajador_cultivo.setText("");
-    }//GEN-LAST:event_btn_limpiarcamposcultivosActionPerformed
-
-    private void btn_asociarcultivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_asociarcultivoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_asociarcultivoActionPerformed
-
-    private void btn_actualizarfincaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actualizarfincaActionPerformed
-     // Verificar si todos los campos están llenos
-    if (txt_nitfinca.getText().isEmpty() || txt_nombrefinca.getText().isEmpty() || txt_ubicacionfinca.getText().isEmpty() || txt_propietariofinca.getText().isEmpty() || txt_correofinca.getText().isEmpty()) {
-      
-        JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos.", "Campos Incompletos", JOptionPane.WARNING_MESSAGE);
-    } else {
-        // Realizar la actualización de la finca si todos los campos están llenos
-        Finca.get(int_pfinca).setStr_nombre(txt_nombrefinca.getText());
-        Finca.get(int_pfinca).setStr_ubicacion(txt_ubicacionfinca.getText());
-        Finca.get(int_pfinca).setStr_propietario(txt_propietariofinca.getText());
-        Finca.get(int_pfinca).setStr_correo(txt_correofinca.getText());
-        JOptionPane.showMessageDialog(null, "La información de la finca se ha actualizado satisfactoriamente.", "Actualización Exitosa", JOptionPane.INFORMATION_MESSAGE);
-    }
-    }//GEN-LAST:event_btn_actualizarfincaActionPerformed
-
-    private void btn_actualizartrabajadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actualizartrabajadorActionPerformed
-    // Verificar si todos los campos están llenos
-    if (txt_codigotrabajador.getText().isEmpty() || txt_nombretrabajador.getText().isEmpty() || txt_contactotrabajador.getText().isEmpty() || txt_nitfinca_trabajador.getText().isEmpty() || txt_cargotrabajador.getText().isEmpty()) {
-        // Mostrar un mensaje de que todos los campos deben ser llenados
-        JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos.", "Campos Incompletos", JOptionPane.WARNING_MESSAGE);
-    } else {
-        // Verificar si el código de la finca es válido
-        String codigoFinca = txt_nitfinca_trabajador.getText();
-        boolean fincaRegistrada = false;
-
-        for (cls_finca finca : Finca) {
-            if (finca.getStr_nit().equals(codigoFinca)) {
-                fincaRegistrada = true;
+        for (int i = 0; i < Finca.size(); i++) {
+            if (txt_nitfinca.getText().equals(Finca.get(i).getStr_nit())) {
+                bln_sw_finca = true;
+                int_pfinca = i;
                 break;
             }
         }
 
-        if (!fincaRegistrada) {
-            JOptionPane.showMessageDialog(null, "El código de la finca no está registrado. Por favor, verifique.", "Finca no Registrada", JOptionPane.ERROR_MESSAGE);
+        if (bln_sw_finca == false) {
+            JOptionPane.showMessageDialog(null, "No se encontraron registros de fincas que coincidan con la búsqueda. Por favor, intente nuevamente.", "Sin Resultados", JOptionPane.WARNING_MESSAGE);
         } else {
-            // Realizar la actualización del trabajador si todos los campos están llenos y el código de la finca es válido
-            Trabajador.get(int_ptrabajador).setStr_nombre(txt_nombretrabajador.getText());
-            Trabajador.get(int_ptrabajador).setStr_contacto(txt_contactotrabajador.getText());
-            Trabajador.get(int_ptrabajador).setStr_nitfinca(txt_nitfinca_trabajador.getText());
-            Trabajador.get(int_ptrabajador).setStr_cargo(txt_cargotrabajador.getText());
-            JOptionPane.showMessageDialog(null, "La información del trabajador se ha actualizado satisfactoriamente.", "Actualización Exitosa", JOptionPane.INFORMATION_MESSAGE);
+            txt_nombrefinca.setText(Finca.get(int_pfinca).getStr_nombre());
+            txt_ubicacionfinca.setText(Finca.get(int_pfinca).getStr_ubicacion());
+            txt_propietariofinca.setText(Finca.get(int_pfinca).getStr_propietario());
+            txt_correofinca.setText(Finca.get(int_pfinca).getStr_correo());
+            btn_actualizarfinca.setEnabled(true);
         }
-    }
+
+    }//GEN-LAST:event_btn_consultarfincaActionPerformed
+
+    private void btn_limpiarcampostrabajadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarcampostrabajadoresActionPerformed
+        txt_codigotrabajador.setText("");
+        txt_nombretrabajador.setText("");
+        txt_contactotrabajador.setText("");
+        txt_nitfinca_trabajador.setText("");
+        txt_cargotrabajador.setText("");
+    }//GEN-LAST:event_btn_limpiarcampostrabajadoresActionPerformed
+
+    private void btn_limpiarcamposcultivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarcamposcultivosActionPerformed
+        txt_codigocultivo.setText("");
+        txt_nombrecultivo.setText("");
+        txt_descripcioncultivo.setText("");
+        txt_produccioncultivo.setText("");
+        txt_codigotrabajador_cultivo.setText("");
+    }//GEN-LAST:event_btn_limpiarcamposcultivosActionPerformed
+
+    private void btn_asociarcultivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_asociarcultivoActionPerformed
+        if (txt_codigocultivo.getText().isEmpty()
+                || !isNumeric(txt_codigocultivo.getText())
+                || txt_nombrecultivo.getText().isEmpty()
+                || txt_descripcioncultivo.getText().isEmpty()
+                || txt_produccioncultivo.getText().isEmpty()
+                || txt_codigotrabajador_cultivo.getText().isEmpty()
+                || !isNumeric(txt_codigotrabajador_cultivo.getText())) {
+            // Todos los campos deben ser llenados o el código de trabajador no es válido
+            JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos y asegúrese de que el código de trabajador y el Nit de la finca sean valores numéricos.", "Campos Incompletos o Inválidos", JOptionPane.WARNING_MESSAGE);
+        } else {
+            // Verificar si el código del trabajador es válido
+            String codigoTrabajador = txt_codigotrabajador_cultivo.getText();
+            boolean trabajadorRegistrado = false;
+
+            for (cls_trabajadores trabajador : Trabajador) {
+                if (trabajador.getStr_codigo().equals(codigoTrabajador)) {
+                    trabajadorRegistrado = true;
+                    break;
+                }
+            }
+
+            if (!trabajadorRegistrado) {
+                JOptionPane.showMessageDialog(null, "El código del trabajador no está registrado. Por favor, verifique.", "Trabajador no Registrado", JOptionPane.ERROR_MESSAGE);
+            } else {
+                // Agregar el cultivo asociado al trabajador si todos los campos están llenos y el código del trabajador es válido
+                Cultivos.add(new cls_cultivos(txt_codigotrabajador_cultivo.getText(),
+                        txt_nombrecultivo.getText(),
+                        txt_descripcioncultivo.getText(),
+                        txt_produccioncultivo.getText(),
+                        txt_codigotrabajador_cultivo.getText()));
+                JOptionPane.showMessageDialog(null, "¡El cultivo ha sido asociado al trabajador satisfactoriamente!", "Éxito en el Registro", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
+    }//GEN-LAST:event_btn_asociarcultivoActionPerformed
+
+    private void btn_actualizarfincaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actualizarfincaActionPerformed
+        // Verificar si todos los campos están llenos
+        if (txt_nitfinca.getText().isEmpty() || txt_nombrefinca.getText().isEmpty() || txt_ubicacionfinca.getText().isEmpty() || txt_propietariofinca.getText().isEmpty() || txt_correofinca.getText().isEmpty()) {
+
+            JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos.", "Campos Incompletos", JOptionPane.WARNING_MESSAGE);
+        } else {
+            // Realizar la actualización de la finca si todos los campos están llenos
+            Finca.get(int_pfinca).setStr_nombre(txt_nombrefinca.getText());
+            Finca.get(int_pfinca).setStr_ubicacion(txt_ubicacionfinca.getText());
+            Finca.get(int_pfinca).setStr_propietario(txt_propietariofinca.getText());
+            Finca.get(int_pfinca).setStr_correo(txt_correofinca.getText());
+            JOptionPane.showMessageDialog(null, "La información de la finca se ha actualizado satisfactoriamente.", "Actualización Exitosa", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_btn_actualizarfincaActionPerformed
+
+    private void btn_actualizartrabajadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actualizartrabajadorActionPerformed
+        // Verificar si todos los campos están llenos
+        if (txt_codigotrabajador.getText().isEmpty()
+                || txt_nombretrabajador.getText().isEmpty()
+                || txt_contactotrabajador.getText().isEmpty()
+                || txt_nitfinca_trabajador.getText().isEmpty()
+                || txt_cargotrabajador.getText().isEmpty()) {
+
+            JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos.", "Campos Incompletos", JOptionPane.WARNING_MESSAGE);
+        } else {
+            // Verificar si el código de la finca es válido
+            String codigoFinca = txt_nitfinca_trabajador.getText();
+            boolean fincaRegistrada = false;
+
+            for (cls_finca finca : Finca) {
+                if (finca.getStr_nit().equals(codigoFinca)) {
+                    fincaRegistrada = true;
+                    break;
+                }
+            }
+
+            if (!fincaRegistrada) {
+                JOptionPane.showMessageDialog(null, "El código de la finca no está registrado. Por favor, verifique.", "Finca no Registrada", JOptionPane.ERROR_MESSAGE);
+            } else {
+                // Realizar la actualización del trabajador si todos los campos están llenos y el código de la finca es válido
+                Trabajador.get(int_ptrabajador).setStr_nombre(txt_nombretrabajador.getText());
+                Trabajador.get(int_ptrabajador).setStr_contacto(txt_contactotrabajador.getText());
+                Trabajador.get(int_ptrabajador).setStr_nitfinca(txt_nitfinca_trabajador.getText());
+                Trabajador.get(int_ptrabajador).setStr_cargo(txt_cargotrabajador.getText());
+                JOptionPane.showMessageDialog(null, "La información del trabajador se ha actualizado satisfactoriamente.", "Actualización Exitosa", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
     }//GEN-LAST:event_btn_actualizartrabajadorActionPerformed
 
     private void btn_consultartrabajadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_consultartrabajadorActionPerformed
@@ -683,57 +732,66 @@ public class frm_finca extends javax.swing.JFrame {
         int_ptrabajador = 0;
         String codigoTrabajador = txt_codigotrabajador.getText();
 
-    for (int i = 0; i < Trabajador.size(); i++) {
-        if (codigoTrabajador.equals(Trabajador.get(i).getStr_codigo())) {
-            bln_sw_trabajador = true;
-            int_ptrabajador = i;
-            break;
-        }
-    }
-
-    if (!bln_sw_trabajador) {
-        JOptionPane.showMessageDialog(null, "No se encontraron registros de trabajadores que coincidan con la búsqueda. Por favor, verifique el código del trabajador.", "Sin Resultados", JOptionPane.WARNING_MESSAGE);
-    } else {
-        txt_nombretrabajador.setText(Trabajador.get(int_ptrabajador).getStr_nombre());
-        txt_contactotrabajador.setText(Trabajador.get(int_ptrabajador).getStr_contacto());
-        txt_nitfinca_trabajador.setText(Trabajador.get(int_ptrabajador).getStr_nitfinca());
-        txt_cargotrabajador.setText(Trabajador.get(int_ptrabajador).getStr_cargo());
-        btn_actualizartrabajador.setEnabled(true);
-    }
-    }//GEN-LAST:event_btn_consultartrabajadorActionPerformed
-
-    private void btn_agregartrabajadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregartrabajadorActionPerformed
-    if (txt_codigotrabajador.getText().isEmpty() || !txt_codigotrabajador.getText().matches("\\d") || txt_nombretrabajador.getText().isEmpty() || txt_contactotrabajador.getText().isEmpty() || txt_nitfinca_trabajador.getText().isEmpty() || txt_cargotrabajador.getText().isEmpty()) {
-    // Mostrar un mensaje de que todos los campos deben ser llenados o el código de trabajador no es válido
-    JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos y asegúrese de que el código de trabajador sea un valor numérico.", "Campos Incompletos o Inválidos", JOptionPane.WARNING_MESSAGE);
-    } else {
-        // Verificar si el código de la finca es válido
-        String codigoFinca = txt_nitfinca_trabajador.getText();
-        boolean fincaRegistrada = false;
-
-        for (cls_finca finca : Finca) {
-            if (finca.getStr_nit().equals(codigoFinca)) {
-                fincaRegistrada = true;
+        for (int i = 0; i < Trabajador.size(); i++) {
+            if (codigoTrabajador.equals(Trabajador.get(i).getStr_codigo())) {
+                bln_sw_trabajador = true;
+                int_ptrabajador = i;
                 break;
             }
         }
 
-        if (!fincaRegistrada) {
-            JOptionPane.showMessageDialog(null, "El código de la finca no está registrado. Por favor, verifique.", "Finca no Registrada", JOptionPane.ERROR_MESSAGE);
+        if (!bln_sw_trabajador) {
+            JOptionPane.showMessageDialog(null, "No se encontraron registros de trabajadores que coincidan con la búsqueda. Por favor, verifique el código del trabajador.", "Sin Resultados", JOptionPane.WARNING_MESSAGE);
         } else {
-            // Agregar el trabajador si todos los campos están llenos y el código de la finca es válido
-            Trabajador.add(new cls_trabajadores(txt_codigotrabajador.getText(), txt_nombretrabajador.getText(), txt_contactotrabajador.getText(), txt_nitfinca_trabajador.getText(), txt_cargotrabajador.getText()));
-            JOptionPane.showMessageDialog(null, "¡Registro de trabajador completado satisfactoriamente!", "Éxito en el Registro", JOptionPane.INFORMATION_MESSAGE);
+            txt_nombretrabajador.setText(Trabajador.get(int_ptrabajador).getStr_nombre());
+            txt_contactotrabajador.setText(Trabajador.get(int_ptrabajador).getStr_contacto());
+            txt_nitfinca_trabajador.setText(Trabajador.get(int_ptrabajador).getStr_nitfinca());
+            txt_cargotrabajador.setText(Trabajador.get(int_ptrabajador).getStr_cargo());
+            btn_actualizartrabajador.setEnabled(true);
         }
-    }
+    }//GEN-LAST:event_btn_consultartrabajadorActionPerformed
+
+    private void btn_agregartrabajadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregartrabajadorActionPerformed
+        if (txt_codigotrabajador.getText().isEmpty()
+                || !isNumeric(txt_codigotrabajador.getText())
+                || txt_nombretrabajador.getText().isEmpty()
+                || txt_contactotrabajador.getText().isEmpty()
+                || !isNumeric(txt_nitfinca_trabajador.getText())
+                || txt_cargotrabajador.getText().isEmpty()) {
+            // Todos los campos deben ser llenados o el código de trabajador no es válido
+            JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos y asegúrese de que el código de trabajador y el Nit de la finca sea un valor numérico.", "Campos Incompletos o Inválidos", JOptionPane.WARNING_MESSAGE);
+        } else {
+            // Verificar si el código de la finca es válido
+            String codigoFinca = txt_nitfinca_trabajador.getText();
+            boolean fincaRegistrada = false;
+
+            for (cls_finca finca : Finca) {
+                if (finca.getStr_nit().equals(codigoFinca)) {
+                    fincaRegistrada = true;
+                    break;
+                }
+            }
+
+            if (!fincaRegistrada) {
+                JOptionPane.showMessageDialog(null, "El código de la finca no está registrado. Por favor, verifique.", "Finca no Registrada", JOptionPane.ERROR_MESSAGE);
+            } else {
+                // Agregar el trabajador si todos los campos están llenos y el código de la finca es válido
+                Trabajador.add(new cls_trabajadores(txt_codigotrabajador.getText(),
+                        txt_nombretrabajador.getText(),
+                        txt_contactotrabajador.getText(),
+                        txt_nitfinca_trabajador.getText(),
+                        txt_cargotrabajador.getText()));
+                JOptionPane.showMessageDialog(null, "¡Registro de trabajador completado satisfactoriamente!", "Éxito en el Registro", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
     }//GEN-LAST:event_btn_agregartrabajadorActionPerformed
 
     private void btn_limpiarcamposfincaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarcamposfincaActionPerformed
-      txt_nitfinca.setText("");
-      txt_nombrefinca.setText("");
-      txt_ubicacionfinca.setText("");
-      txt_propietariofinca.setText("");
-      txt_correofinca.setText("");
+        txt_nitfinca.setText("");
+        txt_nombrefinca.setText("");
+        txt_ubicacionfinca.setText("");
+        txt_propietariofinca.setText("");
+        txt_correofinca.setText("");
     }//GEN-LAST:event_btn_limpiarcamposfincaActionPerformed
 
     private void txt_nitfincaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nitfincaActionPerformed

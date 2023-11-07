@@ -41,6 +41,7 @@ public class frm_finca extends javax.swing.JFrame {
         txt_descripcioncultivo = new javax.swing.JTextField();
         txt_codigotrabajador_cultivo = new javax.swing.JTextField();
         txt_codigocultivo = new javax.swing.JTextField();
+        txt_labores = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         btn_limpiarcampostrabajadores = new javax.swing.JButton();
         btn_actualizartrabajador = new javax.swing.JButton();
@@ -187,6 +188,14 @@ public class frm_finca extends javax.swing.JFrame {
             }
         });
 
+        txt_labores.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
+        txt_labores.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Labores", javax.swing.border.TitledBorder.RIGHT, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tw Cen MT", 0, 12))); // NOI18N
+        txt_labores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_laboresActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -210,6 +219,9 @@ public class frm_finca extends javax.swing.JFrame {
                             .addComponent(txt_produccioncultivo, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_descripcioncultivo, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_nombrecultivo, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(txt_labores, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
         );
         jPanel4Layout.setVerticalGroup(
@@ -225,9 +237,11 @@ public class frm_finca extends javax.swing.JFrame {
                 .addComponent(txt_descripcioncultivo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txt_produccioncultivo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txt_codigotrabajador_cultivo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txt_labores, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btn_asociarcultivo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_limpiarcamposcultivos, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -366,9 +380,9 @@ public class frm_finca extends javax.swing.JFrame {
                 .addComponent(txt_contactotrabajador, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txt_nitfinca_trabajador, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txt_cargotrabajador, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btn_limpiarcampostrabajadores, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_consultartrabajador, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -510,9 +524,9 @@ public class frm_finca extends javax.swing.JFrame {
                 .addComponent(txt_ubicacionfinca, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txt_propietariofinca, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txt_correofinca, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btn_limpiarcamposfinca, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_consultarfinca, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -632,6 +646,7 @@ public class frm_finca extends javax.swing.JFrame {
         txt_contactotrabajador.setText("");
         txt_nitfinca_trabajador.setText("");
         txt_cargotrabajador.setText("");
+        txt_labores.setText("");
     }//GEN-LAST:event_btn_limpiarcampostrabajadoresActionPerformed
 
     private void btn_limpiarcamposcultivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarcamposcultivosActionPerformed
@@ -649,6 +664,7 @@ public class frm_finca extends javax.swing.JFrame {
                 || txt_descripcioncultivo.getText().isEmpty()
                 || txt_produccioncultivo.getText().isEmpty()
                 || txt_codigotrabajador_cultivo.getText().isEmpty()
+                || txt_labores.getText().isEmpty()
                 || !isNumeric(txt_codigotrabajador_cultivo.getText())) {
             // Todos los campos deben ser llenados o el código de trabajador no es válido
             JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos y asegúrese de que el código de trabajador y el Nit de la finca sean valores numéricos.", "Campos Incompletos o Inválidos", JOptionPane.WARNING_MESSAGE);
@@ -672,8 +688,9 @@ public class frm_finca extends javax.swing.JFrame {
                         txt_nombrecultivo.getText(),
                         txt_descripcioncultivo.getText(),
                         txt_produccioncultivo.getText(),
-                        txt_codigotrabajador_cultivo.getText()));
-                JOptionPane.showMessageDialog(null, "¡El cultivo ha sido asociado al trabajador satisfactoriamente!", "Éxito en el Registro", JOptionPane.INFORMATION_MESSAGE);
+                        txt_codigotrabajador_cultivo.getText(),
+                        txt_labores.getText()));
+                JOptionPane.showMessageDialog(null, "¡El trabajador  " + txt_nombretrabajador.getText()+ ", ha sido asociado al cultivo de   "+ txt_nombrecultivo.getText() + " satisfactoriamente!" , "Éxito en el Registro", JOptionPane.INFORMATION_MESSAGE);
             }
         }
     }//GEN-LAST:event_btn_asociarcultivoActionPerformed
@@ -854,6 +871,10 @@ public class frm_finca extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_codigotrabajador_cultivoActionPerformed
 
+    private void txt_laboresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_laboresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_laboresActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -895,6 +916,7 @@ public class frm_finca extends javax.swing.JFrame {
     private javax.swing.JTextField txt_contactotrabajador;
     private javax.swing.JTextField txt_correofinca;
     private javax.swing.JTextField txt_descripcioncultivo;
+    private javax.swing.JTextField txt_labores;
     private javax.swing.JTextField txt_nitfinca;
     private javax.swing.JTextField txt_nitfinca_trabajador;
     private javax.swing.JTextField txt_nombrecultivo;
